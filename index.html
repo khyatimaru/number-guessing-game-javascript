@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <div class="container">
         <div class="flex-center flex-column">
-            <h1>Number Guessing Game</h1>
+            <h2>Guess a Number</h2>
+
             <div class="message"></div>
-            <input type="number" class="guessInput" placeholder="number">
-            <button class="btn" id="guessNumberBtn">Guess</button>
+            <input 
+                type="number" 
+                class="guessInput" 
+                placeholder="number">
+            <button 
+                class="btn" 
+                disabled    
+                onclick="guessUserValue()"
+                id="guessNumberBtn">Guess</button>
         </div>
     </div>
     <script src= "app.js"></script>
+    <div class="footer">
+            <span>LinkedIn: </span><a href="https://www.linkedin.com/in/khyati-maru" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <span>GitHub: </span><a href="https://github.com/khyatimaru" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
 </body>
 </html>

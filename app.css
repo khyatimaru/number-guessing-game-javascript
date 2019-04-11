@@ -22,7 +22,7 @@ h4 {
 h1 {
     font-size: 5.4rem;
     color: #444f00;
-        margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 h1 > span {
     font-size: 2.4rem;
@@ -30,7 +30,8 @@ h1 > span {
 }
 h2 {
     font-size: 4.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: rem;
+    color: #444f00;
     font-weight: 700;
 }
 h3 { 
@@ -82,12 +83,13 @@ h3 {
     font-size: 1.8rem;
     padding: 1rem 0;
     width: 20rem;
-    text-align: center; 
+    text-align: center;
     border: 0.1rem solid #444f00;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #444f00;
-    background-color: white;
+    color: #b7c558;
+    background-color: #444f00;
+    border-radius: 4px;
 }
 
 .btn:hover {
@@ -95,6 +97,7 @@ h3 {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(166, 190, 59, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
+    outline: none;
 }
 
 .btn[disabled]:hover {
@@ -117,9 +120,13 @@ input {
     padding: 1.5rem;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(166, 190, 59, 0.5);
     font-size: 1.8rem;
+    border: 0.2rem solid #444f00;
+    color: #444f00;
 }
 
-
+input:focus {
+    outline: none !important;
+}
 input::placeholder {
     color: rgb(199, 199, 196);
 }
@@ -130,13 +137,17 @@ input::placeholder {
     bottom: 0.2rem;
     width: 100%;
     height: 4rem;
-    background-color: #56a5eb;
+    background-color: #444f00;
     text-align: center;
     font-size: 2rem;
 }
 .fab     {
     margin-right: 20px;
     margin-top: 7px;
+    color: #141414
+}
+span {
+    color: #b7c558;
 }
 
 .message {
